@@ -1,0 +1,26 @@
+.QuoteWrap {
+  display: flex;
+  align-items: center;
+
+  margin: 20px 60px;
+}
+.quote {
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.quote p {
+  letter-spacing: 3.5px;
+}
+.quote h2 {
+  text-align: center;
+}
+.quote h2 span {
+  color: #dd2c00;
+  text-align: center;
+}
