@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navitems from "./Navitems";
 import Dropdown from "./Dropdown";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   return (
