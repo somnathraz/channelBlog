@@ -8,6 +8,7 @@ import FirstPart from "../../component/FirstPart/FirstPart";
 import SecondPart from "../../component/SecondPart/SecondPart";
 import { getSortedPostsData } from "../../lib/post";
 import { sortByDate } from "../../Util";
+import Categories from "../../component/Categories/Categories";
 
 export default function Home({ allPostsData }) {
   console.log(allPostsData);
@@ -28,6 +29,7 @@ export default function Home({ allPostsData }) {
         <FirstPart allPostsData={allPostsData} />
         <SecondPart allPostsData={allPostsData} />
         <FirstSection />
+        <Categories allPostsData={allPostsData} />
       </main>
     </>
   );

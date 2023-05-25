@@ -7,7 +7,7 @@ const SecondPart = ({ allPostsData }) => {
     <div className={style.wrapper}>
       <div className={style.imgWrapLeft}>
         <Image
-          src="/bgImg.jpg"
+          src={allPostsData[0].headerImg}
           priority
           alt="First part background image channelBlog"
           className={style.img}
@@ -22,13 +22,14 @@ const SecondPart = ({ allPostsData }) => {
       </div>
       <div className={style.imgWrapRight}>
         {allPostsData.slice(2, 8).map((allPostsData) => {
-          const { id, title, tag, readTime } = allPostsData;
+          const { id, title, headerImg, tag, readTime } = allPostsData;
+          console.log(allPostsData);
           return (
             <>
-              <div className={style.blogBlock} key={id}>
+              <div className={style.blogBlock} key={title}>
                 <Image
-                  src="/bgImg.jpg"
-                  // src={headerImage}
+                  // src="/bgImg.jpg"
+                  src={headerImg}
                   priority
                   alt="First part background image channelBlog"
                   className={style.img}

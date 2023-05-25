@@ -8,8 +8,8 @@ const FirstPart = ({ allPostsData }) => {
     <div className={style.wrapper}>
       <div className={style.imgWrapper}>
         <Image
-          // src={allPostsData[0].headerImage}
-          src="/hc.jpg"
+          src={allPostsData[0].headerImg}
+          // src="/hc.jpg"
           priority
           alt="First part background image channelBlog"
           className={style.img}

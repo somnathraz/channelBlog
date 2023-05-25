@@ -15,10 +15,15 @@
     border-radius: 20px;
     flex-wrap: wrap;
 }
+.imgWrapLeft{
+    position: relative;
+}
 .imgWrapLeft img{
     border-radius: 10px;
   margin: 30px;
-  position: relative;
+  /* position: absolute; */
+   /* bottom: 154px; */
+    /* left: 87px;  */
 }
 .imgContent{
         width: 80%;
@@ -26,9 +31,6 @@
 }
 .imgContent h6{
     font-size: 14px;
-}
-.img{
-      border-radius: 10px; 
 }
 
 

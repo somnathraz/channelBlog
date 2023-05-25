@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./FirstSection.module.css";
 import Image from "next/image";
 import { bgImg } from "./bgImgData";
+import { BarLoader } from "react-spinners";
 
 const FirstSection = () => {
   const [imgChange, setImgChange] = useState(bgImg);
@@ -42,6 +43,9 @@ const FirstSection = () => {
           fill={true}
           style={{ objectFit: "cover" }}
         />
+        <div className={style.barLoader}>
+          {/* <BarLoader color="#eeeeee" size={60} /> */}
+        </div>
       </div>
     </div>
   );
