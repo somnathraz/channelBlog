@@ -23,7 +23,7 @@ const FirstSection = () => {
 
       // set the background image
       setSrc(imgChange[index]);
-      console.log(imgChange[index]);
+      // console.log(imgChange[index]);
 
       index++;
     };
