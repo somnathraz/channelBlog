@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./Navbar.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { menu } from "./menu";
 import Dropdown from "./Dropdown";
-import LoginDialog from "../Login/LoginDialog";
+import RegisterPopup from "../RegisterPopup/RegisterPopup";
+
 // import { FaBars } from "react-icons/fa";
 
 const Navitems = () => {
@@ -20,13 +20,12 @@ const Navitems = () => {
   });
 
   return (
-    <div className={style.navItem}>
+    <div className="navItem">
       <span>
         {/* {mobile ? (
-          <FaBars className={style.hamburger} />
+          <FaBars className="hamburger} />
         ) : ( */}
         <>
-          {" "}
           {menu.map((menu) => {
             if (menu.itemName === "Services") {
               return (
@@ -49,9 +48,10 @@ const Navitems = () => {
         </>
         {/* )} */}
       </span>
+      <span>Sign In </span>
       <span>
-        <button className={style.btn} onClick={() => setFormShow(true)}>
-          Get Started {formShow && <LoginDialog />}
+        <button className="btn" onClick={() => setFormShow(true)}>
+          Get Started {formShow && <RegisterPopup setFormShow={setFormShow} />}
         </button>
       </span>
     </div>

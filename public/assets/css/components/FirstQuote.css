@@ -1,9 +1,3 @@
-.QuoteWrap {
-  display: flex;
-  align-items: center;
-
-  margin: 20px 60px;
-}
 .quote {
   background-color: rgb(241, 241, 241);
   border-radius: 8px;

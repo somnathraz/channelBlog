@@ -1,0 +1,26 @@
+.GridWrapper {
+  display: grid;
+  grid-template-columns: 28% 68%;
+  gap: 40px;
+  border-radius: 10px;
+  margin: 20px 100px;
+  background-color: rgb(240, 240, 240);
+}
+
+.imgWrapLeft {
+  position: relative;
+}
+.imgWrapLeft img {
+  border-radius: 10px;
+  margin: 30px;
+  /* position: absolute; */
+  /* bottom: 154px; */
+  /* left: 87px;  */
+}
+.imgContent {
+  width: 80%;
+  margin-right: 0px !important;
+}
+.imgContent h6 {
+  font-size: 14px;
+}

@@ -1,26 +1,24 @@
 import React from "react";
-import style from "./FirstPart.module.css";
 import Image from "next/image";
 
 const FirstPart = ({ allPostsData }) => {
-  // console.log(allPostsData);
   return (
-    <div className={style.wrapper}>
-      <div className={style.imgWrapper}>
+    <div className="twoGrid">
+      <div className="imgWrapper">
         <Image
           src={allPostsData[0].headerImg}
           // src="/hc.jpg"
           priority
           alt="First part background image channelBlog"
-          className={style.img}
+          className="img"
           height={200}
           width={500}
         />
       </div>
-      <div className={style.contentRight}>
+      <div className="contentRight">
         <h1>{allPostsData[0].title}</h1>
         <p>{allPostsData[0].desc}</p>
-        <div className={style.readingTime}>
+        <div className="readingTime">
           <span>{allPostsData[0].tag}</span>&nbsp;|&nbsp;
           <span>{allPostsData[0].readTime}</span>
         </div>

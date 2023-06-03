@@ -1,0 +1,25 @@
+.topic {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 420px;
+  border-radius: 10px;
+}
+.topic h4 {
+  margin: 10px;
+}
+.topic hr {
+  width: 90%;
+  margin: 10px;
+}
+.contentBlock {
+  display: grid;
+  grid-template-columns: 66% 30%;
+  gap: 15px;
+}
+.content h5 {
+  margin: 10px;
+}
+.content p {
+  font-size: 12px;
+  margin: 10px;
+}

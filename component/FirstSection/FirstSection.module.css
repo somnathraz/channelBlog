@@ -1,24 +1,24 @@
-.wrapper{
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  padding: 20px 100px;
   width: 100%;
 }
-.wrapper h1{
-    color: transparent;
+.wrapper h1 {
+  color: transparent;
 }
-.Imgwrapper{
+.Imgwrapper {
   position: absolute;
   height: 100%;
   width: 100%;
   overflow: hidden;
   z-index: -1;
 }
-.barLoader{
+.barLoader {
   display: flex;
   align-items: center;
   justify-content: center;

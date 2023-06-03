@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import style from "./Navbar.module.css";
 import { items } from "./item";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ const Dropdown = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
   return (
     <ul
-      className={toggleDropdown ? style.subItemH : style.subItem}
+      className={toggleDropdown ? "subItemH" : "subItem"}
       onClick={() => setToggleDropdown(!toggleDropdown)}
     >
       {items.map((items) => {

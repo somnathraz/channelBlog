@@ -1,0 +1,14 @@
+.imgWrapper img {
+  border-radius: 10px;
+  height: 200px;
+}
+.contentRight p {
+  margin-top: 10px;
+}
+.readingTime {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  margin-top: 20px;
+}

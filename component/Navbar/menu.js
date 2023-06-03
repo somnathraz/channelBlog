@@ -6,22 +6,7 @@ export const menu = [
   },
   {
     id: 2,
-    itemName: "Services",
+    itemName: "Join Us",
     path: "#",
-  },
-  {
-    id: 3,
-    itemName: "Membership",
-    path: "./membership",
-  },
-  {
-    id: 4,
-    itemName: "Write",
-    path: "./write",
-  },
-  {
-    id: 5,
-    itemName: "Sign In",
-    path: "./sign-in",
   },
 ];

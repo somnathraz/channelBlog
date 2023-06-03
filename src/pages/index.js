@@ -12,7 +12,6 @@ import Categories from "../../component/Categories/Categories";
 import Slider from "../../component/Slider/Slider";
 
 export default function Home({ allPostsData }) {
-  console.log(allPostsData);
   return (
     <>
       <Head>

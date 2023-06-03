@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import styles from "./FirstQuote.module.css";
 import Text from "../Animation/Text";
 
-const FirstQuote = ({ nunito }) => {
+const FirstQuote = () => {
   return (
-    <div className={`${styles.QuoteWrap} ${nunito.className}`}>
-      <div className={styles.quote}>
+    <div className="wrapper">
+      <div className="quote">
         <p>Welcome To Channel</p>
         <h2>
           Craft Narratives ✍️ , that ignite{" "}
