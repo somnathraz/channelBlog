@@ -1,22 +1,35 @@
 import React from "react";
 import Image from "next/image";
+import Avatar from "../blogCompo/Avatar/Avatar";
+import Like from "../blogCompo/Like/Like";
 
 const SecondPart = ({ allPostsData }) => {
   return (
     <div className="GridWrapper">
-      <div className="flexBox ">
-        <Image
-          src={allPostsData[0].headerImg}
-          priority
-          alt="First part background image channelBlog"
-          className="img"
-          height={380}
-          width={400}
-        />
-        <div className="textBox">
-          <h1>{allPostsData[0].title}</h1>
-          <span>{allPostsData[0].tag}</span>&nbsp;|&nbsp;
-          <span>{allPostsData[0].readTime}</span>
+      <div className="flexColumn flexJustifyCenter paddingBox gap10  cursor">
+        <div className="imgWrapper">
+          <Image
+            src={allPostsData[1].headerImg}
+            priority
+            alt="First part background image channelBlog"
+            className="img"
+            height={380}
+            width={400}
+          />
+        </div>
+        <div className="flexColumn relative gap10">
+          <h4>{allPostsData[1].title}</h4>
+          <p>{allPostsData[1].desc}</p>
+          <div className="readingTime">
+            <span>{allPostsData[0].tag}</span>&nbsp;|&nbsp;
+            <span>{allPostsData[0].readTime}</span>
+          </div>
+          <Avatar
+            avatarName={allPostsData[0].author}
+            avatarPosition={allPostsData[0].position}
+            avatarSrc={allPostsData[0].avatar}
+          />
+          <Like />
         </div>
       </div>
       <div className="threeGrid paddingBox">
@@ -24,8 +37,11 @@ const SecondPart = ({ allPostsData }) => {
           const { id, title, headerImg, tag, readTime } = allPostsData;
 
           return (
-            <>
-              <div className="blogBlock" key={id}>
+            <div
+              className="flexColumn height width flexJustifyBetween cursor"
+              key={id}
+            >
+              <div className="imgWrapper">
                 <Image
                   // src="/bgImg.jpg"
                   src={headerImg}
@@ -35,13 +51,14 @@ const SecondPart = ({ allPostsData }) => {
                   height={120}
                   width={180}
                 />
-                <div className="imgContent">
-                  <h6>{title}</h6>
-                  <span>{tag}</span>&nbsp;|&nbsp;
-                  <span>{readTime}</span>
+              </div>
+              <div className="flexColumn flexJustifyBetween width ">
+                <h6 className="h6">{title}</h6>
+                <div className="tagWA">
+                  <span>{tag}</span>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

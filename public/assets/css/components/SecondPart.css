@@ -17,10 +17,7 @@
   /* bottom: 154px; */
   /* left: 87px;  */
 }
-.imgContent {
-  width: 80%;
-  margin-right: 0px !important;
-}
-.imgContent h6 {
+
+.GridWrapper .h6 {
   font-size: 14px;
 }
