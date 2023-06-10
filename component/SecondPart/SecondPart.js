@@ -17,7 +17,7 @@ const SecondPart = ({ allPostsData }) => {
             width={400}
           />
         </div>
-        <div className="flexColumn relative gap10">
+        <div className="flexColumn relative gap10 zIndex0">
           <h4>{allPostsData[1].title}</h4>
           <p>{allPostsData[1].desc}</p>
           <div className="readingTime">

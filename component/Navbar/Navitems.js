@@ -18,7 +18,7 @@ const Navitems = () => {
       setMobile(true);
     }
   });
-
+  console.log(formShow, "popup");
   return (
     <div className="navItem">
       <span>
@@ -51,8 +51,9 @@ const Navitems = () => {
       <span>Sign In </span>
       <span>
         <button className="btn" onClick={() => setFormShow(true)}>
-          Get Started {formShow && <RegisterPopup setFormShow={setFormShow} />}
+          Get Started
         </button>
+        {formShow ? <RegisterPopup setFormShow={setFormShow} /> : ""}
       </span>
     </div>
   );

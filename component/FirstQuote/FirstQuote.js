@@ -3,7 +3,7 @@ import Text from "../Animation/Text";
 
 const FirstQuote = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper globalMarginTop">
       <div className="quote">
         <p>Welcome To Channel</p>
         <h2>

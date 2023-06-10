@@ -18,7 +18,7 @@ const FirstPart = ({ allPostsData }) => {
           width={500}
         />
       </div>
-      <div className="contentRight relative">
+      <div className="contentRight relative zIndex-1">
         <p className="tag">
           <span className="effect-shine">Latest</span>
         </p>
